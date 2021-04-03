@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f3f3f3;
+   
+}
+h1{
+    font-size : 3rem;
+}
+
+    /*_______________HEADER___________ */
+.container{
+
+    background-color: #f3f3f3;
+    height : 100vh;
+    width : 100%;
+    color : rgb(33 43 56);
+    line-height: 100px;
+    position : relative;
+    padding-top : 6em;
+    
+    
+}
+
+h1{
+    margin-left : 10%;
+}
+.header a{
+
+    color :rgb(33 43 56);
+}
+
+.shopcontainer{
+    
+    width : 60%;
+    position : relative;
+}
+.shopcontainer img{
+    position : absolute;
+    width : 100%;
+    border-radius: 4px;
+    height: fit-content;
+}
+.rightside{
+    width: 40%;
+    height: 525px;
+    float : right;
+    position : relative;
+}
+.rightside h1{
+    line-height: 1.2;
+    font-size : 4em;
+}
+#addpizza:link,#addpizza:visited{
+    background-color:  rgb(33 43 56);
+    color : #f3f3f3;
+    font-weight: 900;
+    border-radius : 3px;
+    right : 11em;
+    top : 16em;
+    padding: 1.3em 3.5em;
+    height : 50px;
+    line-height: 1em;
+    position : absolute;
+}
+/* ________________________FOOTER__________________ */
+.footer{
+    background-color: #ececec;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    color:  rgb(33 43 56);
+   
+}
+.footer a{
+    color : rgb(33 43 56);
+}
+.footer li:hover{
+    transform: translateX(8px);
+    transition: .4s ease;
+}
+.footer h1{
+    margin-top : 6%;
+}
+.footer img{
+   
+    width : 20px;
+    height : 20px;
+    
+}
+.block1{
+    padding : 2.5em 1.87em;
+    margin-left : 30%;
+    transition : .4s all ease;
+    
+}
+.block2{
+    padding : 2.5em 1.87em;
+    transition : .4s all ease;
+    
+}
+
+.block1 li,.block2 li , h4{
+    margin-bottom : 1em;
+    
+}
+.listsection{
+    display: flex;
+}
+
+
+/* _____________________ADD PHP PAGE */
+.wrap p{
+    font-size: 13px;
+    margin-bottom : 20px;
+
+}
+.content{
+    width : 100%;
+    height : 500px;
+    color : rgb(33 43 56);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.wrap{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+}
+.inputs{
+    padding: 1em;
+    width: 400px;
+    border-radius: 4px;
+    border : 3px solid  rgb(33 43 56);
+    outline : none !important;
+    transition: .4s all ease;
+    background : #f7f7f7;
+}
+.false{
+    border : 3px solid rgb(236, 67, 67);
+   
+}
+.true{
+    border : 3px solid rgb(88, 226, 88);
+
+}
+.wrap span{
+    color : rgb(238, 52, 52);
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.btn{
+    background-color:  rgb(33 43 56);
+    color :#f3f3f3;
+    font-weight: bolder;
+    outline : none;
+    border : none;
+    border-radius: 3px;
+    padding: .8em 1.8em;
+    transition : .8s all ease;
+}
+.sbmt{
+    position : absolute;
+    margin-top : 2em;
+    left : 50%;
+    right:50%;
+    transform: translate(-50%,-50%);
+}
+
+.addbtn:hover{
+    cursor:pointer;
+    opacity : .8;
+    transition : .8s all ease;
+}
+
+/*   ___________________INDEX __________*/
+.pizza_container{
+    width: 100%;
+    height : auto;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.pizzacard{
+    margin-top : 3%;
+    padding: 2%;
+    margin-left : 2em;
+    width : 250px;
+    height : 420px;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    color: rgb(33 43 56);
+    margin-bottom : 2em;
+    box-shadow:.5em .8em 20px black ;
+
+}
+.pizzacardimg{
+    width: 100%;
+    height : 170px;
+    position: relative;
+}
+.pizzacard img{
+    position : absolute;
+    width: 100%;
+    height: 170px;
+    border-radius: 4px;
+
+}
+
+.pizzacard_content{
+    display: inline-block;
+    margin : .4em;
+
+    width: 100%;
+    height : 170px;
+
+}
+.pizzacard_content li{
+    list-style: decimal;
+    margin : .5em 1em;
+    margin-bottom : 0;
+}
+.pizzabuttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.indexbtn{
+    background-color: rgb(33 43 56);
+    color: #f3f3f3;
+}
+.indexbtn:hover{
+    opacity:.8;
+    cursor: pointer;
+}
+/* Detail page */
+.detailcontainer{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+.detailcard{
+    width :400px;
+    height : 500px;
+}
+.detailcontent span{
+   margin-bottom : 30px;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width : 1165px)
+{
+     .pizza_container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #addpizza:link, #addpizza:visited{
+        right: 100%;
+        top: 88%;
+        height: 60px;
+    }
+    .rightside h1{
+        margin-top : 30%;
+        font-size : 2em;
+    }
+}
+@media screen and (max-width : 901px)
+{
+    .pizza_container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .pizzacard{
+        width : 300px;
+    }
+    .block1{
+        margin-left : 10%;
+    }
+}
+@media screen and (max-width : 700px)
+{
+    .pizza_container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+@media screen and (max-width : 486px)
+{
+    body{
+        overflow-x : hidden;
+    }
+    .container{
+        height : 130px;
+        line-height: 0;
+    }
+    .pizzacard
+    {
+        margin-right : 5%;
+    }
+    .header a{
+        margin-left : 1.5em;
+    }
+    #addpizza{
+      margin : 2.3em 5em auto auto;
+    }
+    #addpizza:link{
+        top: 40%;
+        right: auto;
+        height: 60px;
+    }
+    .footer h1{
+        display: none;
+    }
+    .block1 li{
+        display: inline;
+    }
+    .inputs{
+        width : 300px;
+    }
+}
+li{
+    font-size : 14px;
+}
+li p{
+    font-weight :100;
+
+}
